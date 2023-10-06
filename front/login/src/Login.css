@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(45deg, purple, black);
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .registerButton {
+  position: absolute;
+  padding-top: 350px;
+} */
+
+.Button {
+  background-color: greenyellow;
+  color: black;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px rgb(0, 0, 0);
+  padding: 10px;
+  z-index: 1000;
+  margin-left: 330px;
+  position: absolute;
+  top: 550px;
+}
+.LoginButton {
+  background-color: greenyellow;
+  color: black;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px rgb(0, 0, 0);
+  padding: 10px;
+  padding-left: 65px;
+  padding-right: 65px;
+  z-index: 1000;
+  margin-left: 330px;
+  position: absolute;
+  top: 425px;
+}
+
+
+.BoxTitle {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Open Sans", sans-serif;
+  color: #282c34;
+}
+
+.LoginBox {
+  border: 3px grey solid;
+  border-radius: 20px;
+  display: block;
+  background-color: white;
+  width: 850px;
+  height: 750px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+}
+
+.LoginFields {  
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.LoginFields form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  label{
+    padding-top: 10px;
+  }
+}
+
+.RegisterBox{
+  /* display: none; */
+
+    border: 3px grey solid;
+    border-radius: 20px;
+    display: block;
+    background-color: white;
+    width: 300px;
+    height: 750px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1000;
+  
+  }
+
+  .closeRegister{
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 700;
+    right: 0;
+    left: 250px;
+    height: 20px;
+    margin: auto;
+
+  }
