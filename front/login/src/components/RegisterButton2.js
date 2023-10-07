@@ -1,14 +1,14 @@
 import '../Login.css'
 
 
-function RegisterButton (){
+function RegisterButton2 (){
     return (
     <>
-    <div className='registerButton'>
-    <button className='Button'>Don't have an account?<br></br>Register here</button>
+    <div className=''>
+    <button className='Button2' id='registerBt'>Register your account</button>
     </div>
     </>
     
 )}
 
-    export default RegisterButton
+    export default RegisterButton2

@@ -17,7 +17,7 @@ app.use(express.json())
 const port = process.env.PORT || 8080
 
 
-//this is the first step to connect a mysql DB with our API
+//this is the first step to connect mysql DB with our API
 const db = mysql.createConnection({
     host: process.env.HOST ,
     user: process.env.DB_USER,

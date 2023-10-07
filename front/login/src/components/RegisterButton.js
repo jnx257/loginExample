@@ -1,11 +1,11 @@
 import '../Login.css'
 
 
-function RegisterBoxButton (){
+function RegisterBoxButton ({onClick}){
     return (
     <>
     <div className='registerButton'>
-    <button className='Button'>Don't have an account?<br></br>Register here</button>
+    <button className='Button' onClick={onClick} >Don't have an account?<br></br>Register here</button>
     </div>
     </>
     

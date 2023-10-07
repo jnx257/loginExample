@@ -45,10 +45,6 @@ body {
   }
 }
 
-/* .registerButton {
-  position: absolute;
-  padding-top: 350px;
-} */
 
 .Button {
   background-color: greenyellow;
@@ -131,14 +127,12 @@ body {
 }
 
 .RegisterBox{
-  /* display: none; */
-
     border: 3px grey solid;
     border-radius: 20px;
     display: block;
     background-color: white;
     width: 300px;
-    height: 750px;
+    height: 650px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -158,5 +152,20 @@ body {
     left: 250px;
     height: 20px;
     margin: auto;
+  }
+
+  .Button2 {
+    background-color: greenyellow;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgb(0, 0, 0);
+    padding: 10px;
+    z-index: 1000;
+    margin-left: 65px;
+    position: absolute;
+    top: 500px;
 
   }
