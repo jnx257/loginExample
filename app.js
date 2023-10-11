@@ -85,8 +85,8 @@ app.post('/register', async (req,res)=>{
 })
 
 app.post('/login', async (req,res)=>{
-    const {email, password} = req.body
-    
+    const {email,password} = req.body
+    console.log(email,password)
     if(!email || !password){
         res.status(400).send('one or more fields have an error. please check and try again')
     }
@@ -114,7 +114,7 @@ app.post('/login', async (req,res)=>{
         }
     })
     }catch(error){
-        console.log(error)
+        console.log(`occured an error: ${error}`)
         res.status(500).send(`Something went wrong ${error}`)
     }
 

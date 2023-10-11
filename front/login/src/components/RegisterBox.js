@@ -10,7 +10,7 @@ function RegisterBox ({closeRegisterBox}){
             <p className="BoxTitle">Sign Up</p>
             <button className="closeRegister" onClick={closeRegisterBox}>X</button>
             <FieldsRegister />
-            <RegisterButton2/>
+            <RegisterButton2 />
           </div>
       </>
     );

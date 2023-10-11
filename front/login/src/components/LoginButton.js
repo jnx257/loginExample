@@ -1,11 +1,10 @@
 import '../Login.css'
 
-
-function LoginButton (){
+function LoginButton ({onClick}){
     return (
     <>
     <div className='LogButton'>
-    <button className='LoginButton' onClick="">Sign In</button>
+    <button className='LoginButton' onClick={onClick}>Sign In</button>
     </div>
     </>
     

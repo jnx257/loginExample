@@ -1,30 +1,47 @@
-import "../Login.css"
+import "../Login.css";
+import LoginButton from "./LoginButton";
+import { login } from "../scripts/login";
+import { useState } from "react";
 
-function Fields (){
+function Fields() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-    return(
-        <>
-        <div className="LoginFields">
+  function handlePassword(event) {
+    setPassword(event.target.value);
+  }
+
+  function handleEmail(event) {
+    setEmail(event.target.value);
+  }
+
+  console.log(email, password);
+
+  return (
+    <>
+      <div className="LoginFields">
         <form>
-            <label for="email">Email:</label>
-            <input 
+          <label htmlFor="email">Email:</label>
+          <input
             type="email"
             placeholder="your email"
-            value=""
-            id="email"
-             ></input>
-            <label for="password">Password:</label>
-            <input 
+            value={email}
+            className="email"
+            onChange={handleEmail}
+          ></input>
+          <label htmlFor="password">Password:</label>
+          <input
             type="password"
-            placeholder="your password" 
-            value=""
-            id="password"
-            ></input>
+            placeholder="your password"
+            value={password}
+            className="password"
+            onChange={handlePassword}
+          ></input>
         </form>
-        </div>
-        
-        </>
-    )
+      </div>
+      <LoginButton onClick={() => login( email, password )} />
+    </>
+  );
 }
 
-export default Fields
+export default Fields;
