@@ -15,7 +15,6 @@ function Fields() {
     setEmail(event.target.value);
   }
 
-  console.log(email, password);
 
   return (
     <>

@@ -4,6 +4,7 @@ import "../Login.css";
 import Fields from "./Fields"
 import RegisterBoxButton from "./RegisterButton";
 import RegisterBox from "./RegisterBox";
+import LoginSuccess from "./LoginSuccess";
 
 function Box() {
   const [isRegisterBox, setIsRegisterBox ] = useState(false)
@@ -19,6 +20,7 @@ function Box() {
         <Fields />
         <RegisterBoxButton onClick={openRegisterBox}/>
         {isRegisterBox && <RegisterBox closeRegisterBox={()=> setIsRegisterBox(false)}/>}
+        <LoginSuccess className='loginSuccess'/>
         </div>
     </> 
   );
